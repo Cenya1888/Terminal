@@ -1,0 +1,11 @@
+{                                                                                                                                 
+  "Intro": "Hi! Congratulations! first response from the server received",                                                                 
+  "Tasks": {                                                                                                                      
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(your_String)&age=(your_number)", 
+    "result": [                                                                                                                   
+      "Your_String",                                                                                                              
+      "Your_number"                                                                                                               
+    ]                                                                                                                             
+  }                                                                                                                               
+}                                                                                                                                                                   
+    

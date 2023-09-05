@@ -1,0 +1,105 @@
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я :
+pwd
+
+2) Создать папку:
+mkdir
+
+3) Зайти в папку:
+cd <folder>
+
+4) Создать 3 папки:
+mkdir <folder1> <folder2> <folder3>
+
+5) Зайти в любоую папку:
+cd /pathname
+
+6) Создать 5 файлов (3 txt, 2 json:
+touch f1.txt f2.txt f3.txt j1.json j2.json
+
+7) Создать 3 папки:
+mkdir <folder1> <folder2> <folder3>
+
+8. Вывести список содержимого папки:
+ls -la
+
+9) + Открыть любой txt файл:
+cat f1.txt
+
+10) + написать туда что-нибудь, любой текст:
+cat > f1.txt
+hello
+
+11) + сохранить и выйти:
+ctrl+c
+
+12) Выйти из папки на уровень выше:
+cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку:
+mv f2.txt f3.txt F1
+  
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку:
+cp F1/f2.txt f3.txt F2
+
+15) Найти файл по имени:
+find $(pwd) -name
+find ../../ -name
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает:
+grep -r --include="*.txt" /pathname
+
+17) вывести несколько первых строк из текстового файла:
+head -n<>
+
+18) вывести несколько последних строк из текстового файла:
+tail -n<>
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает:
+less t1.txt
+
+20) вывести дату и время:
+date
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер:
+http://162.55.220.72:5005/terminal-hw-request
+
+http://162.55.220.72:5005/get_method?name=senya&age=52 "
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+   #!/bin/bash
+   #Write a script commands 
+   echo "1) Посмотреть где я:"   
+   echo "pwd"
+   pwd
+   echo "2) Создать папку:" 
+   echo "mkdir f1"
+   mkdir f1
+   echo "3) Зайти в папку:"
+   echo "cd f1"
+   cd f1
+   echo "4) Создать 3 папки:"
+   echo "mkdir fc1 fc2 fc3"
+   mkdir fc1 fc2 fc3
+   echo "5) Зайти в любую папку:"
+   echo "cd /D/Projekt/qa/Ce/Dz"
+   cd /D/Projekt/qa/Ce/Dz    
+   echo "6) Создать 5 файлов (3 txt, 2 json):"
+   echo "touch t1.txt t2.txt t3.txt j1.json j2.json"
+   touch t1.txt t2.txt t3.txt j1.json j2.json
+   echo "7) Создать 3 папки fm1 fm2 fm3"
+   echo "mkdir fm1 fm2 fm3:"
+   mkdir fm1 fm2 fm3
+   echo "8) Вывести список содержимого папки:"
+   echo "ls -la"
+   ls -la 
+   echo "13) переместить любые 2 файла, которые вы создали, в любую другую папку:"
+   echo "mv t2.txt t3.txt fm1"
+   cd DZ ; mv t2.txt t3.txt fm1
+

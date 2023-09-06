@@ -2,11 +2,17 @@
 
 # Linux terminal. GitBash 1
 
+## --> [Commands](#Cm) <--
+
 ## --> [Задание\*](#*) <--
 
 ## --> [Termial. HW 2](#TM_2) <--
 
-## commands
+<a id="Cm"></a>
+
+[в начало](#go)
+
+# Commands
 
 1. Посмотреть где я:
 
